@@ -1,0 +1,8 @@
+<map id="Drawable" name="Drawable">
+<area shape="rect" id="node7" href="$da/dbf/class_draw_registration_command.html" title="{DrawRegistrationCommand\n||+ DrawRegistrationCommand()\l+ DrawRegistrationCommand()\l+ ~DrawRegistrationCommand()\l+ DrawRegistrationCommand()\l+ operator=()\l+ execute()\l}" alt="" coords="5,963,212,1113"/>
+<area shape="rect" id="node8" href="$d2/dd0/class_draw_deregistration_command.html" title="{DrawDeregistrationCommand\n||+ DrawDeregistrationCommand()\l+ DrawDeregistrationCommand()\l+ ~DrawDeregistrationCommand()\l+ DrawDeregistrationCommand()\l+ operator=()\l+ execute()\l}" alt="" coords="470,963,689,1113"/>
+<area shape="rect" id="node2" href="$d0/dd1/class_game_object.html" title="{GameObject\n|&#45; curr_RegState\l|+ GameObject()\l+ ~GameObject()\l+ GameObject()\l+ operator=()\l+ SubmitEntry()\l+ SubmitExit()\l# SceneEntry()\l# SceneExit()\l&#45; ConnectToScene()\l&#45; DisconnectFromScene()\l}" alt="" coords="215,404,386,613"/>
+<area shape="rect" id="node3" href="$d7/dcf/class_game_object_entry_command.html" title="{GameObjectEntryCommand\n||+ GameObjectEntryCommand()\l+ GameObjectEntryCommand()\l+ ~GameObjectEntryCommand()\l+ GameObjectEntryCommand()\l+ operator=()\l+ execute()\l}" alt="" coords="186,191,399,341"/>
+<area shape="rect" id="node5" href="$d2/df5/class_game_object_exit_command.html" title="{GameObjectExitCommand\n||+ GameObjectExitCommand()\l+ GameObjectExitCommand()\l+ ~GameObjectExitCommand()\l+ GameObjectExitCommand()\l+ operator=()\l+ execute()\l}" alt="" coords="83,713,289,863"/>
+<area shape="rect" id="node4" href="$db/db6/class_command_base.html" title="{CommandBase\n||+ CommandBase()\l+ ~CommandBase()\l+ CommandBase()\l+ operator=()\l+ execute()\l}" alt="" coords="123,5,262,141"/>
+</map>
