@@ -1,9 +1,0 @@
-<map id="CollidableManager.h" name="CollidableManager.h">
-<area shape="rect" id="node3" href="$d4/de4/_collision_test_pair_command_8h.html" title="CollisionTestPairCommand.h" alt="" coords="119,80,309,107"/>
-<area shape="rect" id="node4" href="$da/dcb/_command_base_8h.html" title="CommandBase.h" alt="" coords="97,304,219,331"/>
-<area shape="rect" id="node11" href="$de/df0/_collision_test_self_command_8h.html" title="CollisionTestSelfCommand.h" alt="" coords="333,80,521,107"/>
-<area shape="rect" id="node5" href="$d9/da6/_collidable_group_8h.html" title="CollidableGroup.h" alt="" coords="412,155,536,181"/>
-<area shape="rect" id="node10" href="$d2/dfb/_ion_math_tools_8h.html" title="IonMathTools.h" alt="" coords="171,155,281,181"/>
-<area shape="rect" id="node8" href="$df/d6a/_collidable_group_base_8h.html" title="CollidableGroupBase.h" alt="" coords="371,304,526,331"/>
-<area shape="rect" id="node9" href="$dc/d8c/_collision_group_delete_command_8h.html" title="CollisionGroupDeleteCommand.h" alt="" coords="270,229,483,256"/>
-</map>

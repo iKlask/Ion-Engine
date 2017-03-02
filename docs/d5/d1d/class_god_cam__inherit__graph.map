@@ -1,4 +1,0 @@
-<map id="GodCam" name="GodCam">
-<area shape="rect" id="node2" href="$d7/d69/class_updatable.html" title="{Updatable\n|&#45; curr_RegState\l&#45; pRegCmd\l&#45; pDeregCmd\l&#45; pDeleteRef\l|+ Updatable()\l+ ~Updatable()\l+ Updatable()\l+ operator=()\l# Update()\l# Register()\l# Deregister()\l&#45; SceneRegistration()\l&#45; SceneDeregistration()\l&#45; SubmitUpdateRegistration()\l&#45; SubmitUpdateDeregistration()\l}" alt="" coords="5,292,205,560"/>
-<area shape="rect" id="node3" href="$d0/dd1/class_game_object.html" title="{GameObject\n|&#45; curr_RegState\l&#45; pRegCmd\l&#45; pDeregCmd\l|+ GameObject()\l+ ~GameObject()\l+ GameObject()\l+ operator=()\l+ SubmitEntry()\l+ SubmitExit()\l# SceneEntry()\l# SceneExit()\l&#45; ConnectToScene()\l&#45; DisconnectFromScene()\l}" alt="" coords="20,5,191,244"/>
-</map>

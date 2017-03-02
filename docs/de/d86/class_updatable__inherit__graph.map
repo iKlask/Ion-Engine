@@ -1,5 +1,0 @@
-<map id="Updatable" name="Updatable">
-<area shape="rect" id="node3" href="$de/da9/class_follow_cam.html" title="{FollowCam\n|&#45; ptrCamera\l&#45; position\l&#45; up3DCam\l&#45; pos3DCam\l&#45; lookAt3DCam\l&#45; mRadius\l&#45; mPhi\l&#45; mTheta\l|+ FollowCam()\l+ FollowCam()\l+ FollowCam()\l+ operator=()\l+ ~FollowCam()\l+ SetLookAt()\l+ SetPos()\l+ Update()\l+ SceneEntry()\l+ SceneExit()\l+ getCamera()\l}" alt="" coords="5,608,120,935"/>
-<area shape="rect" id="node4" href="$d5/d71/class_god_cam.html" title="{GodCam\n|&#45; ptrCamera\l&#45; CamPos\l&#45; CamRot\l&#45; CamUp\l&#45; CamDir\l&#45; CamTranSpeed\l&#45; CamRotSpeed\l|+ GodCam()\l+ GodCam()\l+ operator=()\l+ ~GodCam()\l+ Update()\l+ SceneEntry()\l+ SceneExit()\l+ getCamera()\l}" alt="" coords="145,637,263,905"/>
-<area shape="rect" id="node2" href="$d0/dd1/class_game_object.html" title="{GameObject\n|&#45; curr_RegState\l&#45; pRegCmd\l&#45; pDeregCmd\l|+ GameObject()\l+ ~GameObject()\l+ GameObject()\l+ operator=()\l+ SubmitEntry()\l+ SubmitExit()\l# SceneEntry()\l# SceneExit()\l&#45; ConnectToScene()\l&#45; DisconnectFromScene()\l}" alt="" coords="48,5,219,244"/>
-</map>

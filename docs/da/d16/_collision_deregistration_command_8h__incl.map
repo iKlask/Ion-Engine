@@ -1,6 +1,0 @@
-<map id="CollisionDeregistrationCommand.h" name="CollisionDeregistrationCommand.h">
-<area shape="rect" id="node2" href="$da/dcb/_command_base_8h.html" title="CommandBase.h" alt="" coords="128,229,251,256"/>
-<area shape="rect" id="node3" href="$d9/da6/_collidable_group_8h.html" title="CollidableGroup.h" alt="" coords="122,80,246,107"/>
-<area shape="rect" id="node6" href="$df/d6a/_collidable_group_base_8h.html" title="CollidableGroupBase.h" alt="" coords="344,229,499,256"/>
-<area shape="rect" id="node7" href="$dc/d8c/_collision_group_delete_command_8h.html" title="CollisionGroupDeleteCommand.h" alt="" coords="243,155,456,181"/>
-</map>

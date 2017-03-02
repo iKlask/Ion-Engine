@@ -1,9 +1,0 @@
-<map id="Drawable.h" name="Drawable.h">
-<area shape="rect" id="node2" href="$d2/d61/_drawable_8cpp.html" title="Drawable.cpp" alt="" coords="5,80,105,107"/>
-<area shape="rect" id="node3" href="$d5/dfc/_drawable_manager_8cpp.html" title="DrawableManager.cpp" alt="" coords="129,80,280,107"/>
-<area shape="rect" id="node4" href="$df/d9f/_draw_deregistration_command_8cpp.html" title="DrawDeregistrationCommand.cpp" alt="" coords="304,80,519,107"/>
-<area shape="rect" id="node5" href="$da/d74/_draw_registration_command_8cpp.html" title="DrawRegistrationCommand.cpp" alt="" coords="543,80,747,107"/>
-<area shape="rect" id="node6" href="$dd/dcf/_god_cam_8h.html" title="GodCam.h" alt="" coords="771,80,855,107"/>
-<area shape="rect" id="node8" href="$dd/d7c/_ion_core_8h.html" title="IonCore.h" alt="" coords="879,80,957,107"/>
-<area shape="rect" id="node7" href="$d7/dbc/_god_cam_8cpp.html" title="GodCam.cpp" alt="" coords="763,155,862,181"/>
-</map>

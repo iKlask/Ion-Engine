@@ -1,3 +1,0 @@
-<map id="NullScene" name="NullScene">
-<area shape="rect" id="node2" href="$d6/db5/class_scene.html" title="{Scene\n|# Update_Manager\l# Draw_Manager\l# Alarm_Manager\l# KeyboardEvent_Manager\l# Collison_Manager\l# Camera_Manager\l# RegBroker\l|+ Scene()\l+ ~Scene()\l+ Scene()\l+ operator=()\l+ Initialize()\l+ SceneEnd()\l+ GetSceneCamera()\l+ InitialzeDefaultSceneCamera()\l# SetCollisionPair()\l# SetCollisionSelf()\l&#45; Update()\l&#45; Draw()\l&#45; Register()\l&#45; Deregister()\l&#45; Register()\l&#45; Deregister()\l&#45; Register()\l&#45; Deregister()\l&#45; Register()\l&#45; Deregister()\l&#45; SubmitCommand()\l&#45; Register()\l}" alt="" coords="5,5,213,479"/>
-</map>
