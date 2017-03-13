@@ -24,7 +24,8 @@ var searchData=
   ['deregisterkey',['DeregisterKey',['../d3/d66/group___i_n_p_u_t-_e_v_e_n_t_s.html#ga5b6ba43c1a8b9f53d0253fd80bd3d160',1,'Inputable']]],
   ['dimgray',['DimGray',['../d9/d44/struct_color.html#a6cc267f277b77fa77e70f180c6403027',1,'Color']]],
   ['dodgerblue',['DodgerBlue',['../d9/d44/struct_color.html#a79902a574f8134aff02c9793f59da57a',1,'Color']]],
-  ['draw',['Draw',['../d0/d9b/group___d_r_a_w-_e_v_e_n_t_s.html#gac1084c9e57e1903e0be4ce402f14608c',1,'Drawable']]],
+  ['draw',['Draw',['../d0/d9b/group___d_r_a_w-_e_v_e_n_t_s.html#gad9f0d5242b82cc01d7a48843d6ebfb68',1,'Drawable']]],
   ['draw_20events_2e',['Draw events.',['../d0/d9b/group___d_r_a_w-_e_v_e_n_t_s.html',1,'']]],
+  ['draw2d',['Draw2D',['../d0/d9b/group___d_r_a_w-_e_v_e_n_t_s.html#ga8312dc79cddca8f2d856cdf0b5bae187',1,'Drawable']]],
   ['drawable',['Drawable',['../d2/de4/class_drawable.html',1,'']]]
 ];

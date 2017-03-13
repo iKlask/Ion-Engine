@@ -28,7 +28,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">Ion Engine 0.8.1</a>
+                    <a class="navbar-brand">Ion Engine 0.10.1</a>
                 </div>
             </div>
         </nav>
@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
       <li class="current"><a href="#index_u"><span>u</span></a></li>
     </ul>
   </div>
@@ -140,6 +141,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>CollisionRegister()
 : <a class="el" href="d2/d0e/group___c_o_l_l_i_s_i_o_n-_e_v_e_n_t_s.html#gaaa27862556f56973374c8cac38417450">Collidable</a>
 </li>
+<li>CorrectForOrigin()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga6d29e40b93ea9f2c226a68b137d3e0cc">IonCamera</a>
+</li>
 </ul>
 
 
@@ -152,31 +156,104 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="d3/d66/group___i_n_p_u_t-_e_v_e_n_t_s.html#ga5b6ba43c1a8b9f53d0253fd80bd3d160">Inputable</a>
 </li>
 <li>Draw()
-: <a class="el" href="d0/d9b/group___d_r_a_w-_e_v_e_n_t_s.html#gac1084c9e57e1903e0be4ce402f14608c">Drawable</a>
+: <a class="el" href="d0/d9b/group___d_r_a_w-_e_v_e_n_t_s.html#gad9f0d5242b82cc01d7a48843d6ebfb68">Drawable</a>
+</li>
+<li>Draw2D()
+: <a class="el" href="d0/d9b/group___d_r_a_w-_e_v_e_n_t_s.html#ga8312dc79cddca8f2d856cdf0b5bae187">Drawable</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
 <li>Get()
-: <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga37277807b154fc2977039c46afef0a18">ModelManager</a>
+: <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gadf7d902501f0f171323b515ba88eda6a">ImageManager</a>
+, <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga37277807b154fc2977039c46afef0a18">ModelManager</a>
 , <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga67813d4b48bb32a688007c5523b36cd8">ShaderManager</a>
-, <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga0b6541e3597b4885466cbf6d9c61a089">TextureManager</a>
+, <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager</a>
+</li>
+<li>getAngle()
+: <a class="el" href="d2/dc6/class_ion_sprite.html#a9569837c09c9c4317b06e532baa1904e">IonSprite</a>
 </li>
 <li>GetBSphere()
 : <a class="el" href="d8/deb/class_collidable.html#a6aee8b1571e98b7fda6c7a683094558f">Collidable</a>
 </li>
+<li>GetCamera()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gab71f88a35ed8eef1a784264dc7418504">IonCamera</a>
+</li>
+<li>GetCamera2D()
+: <a class="el" href="d6/db5/class_scene.html#a76ec5afd2ee67245a334924d4c05c08d">Scene</a>
+</li>
 <li>GetCurrentScene()
 : <a class="el" href="df/d02/group___s_c_e_n_e.html#gab279cee8a7ac9b166bd5e7c379043cbe">SceneManager</a>
+</li>
+<li>getDir()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gaa46f91db55f1cd388b362de838f4b245">IonCamera</a>
+</li>
+<li>getFarBottomLeft()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gaf1f8798ed75691194c004bdc33a1477b">IonCamera</a>
+</li>
+<li>getFarBottomRight()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga72d9e2c08e9086af916f1c4c449d67a8">IonCamera</a>
+</li>
+<li>getFarTopLeft()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga17f65fa80246364304d2a8e6e51240ee">IonCamera</a>
+</li>
+<li>getFarTopRight()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gac70ed7d9290b6f5a9ee1937d0f81877c">IonCamera</a>
+</li>
+<li>getFieldOfView()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gab6d5486c390962d1e0cfa051ba19a84a">IonCamera</a>
 </li>
 <li>GetFrameTime()
 : <a class="el" href="d9/d7f/class_time_manager.html#abc678da7dd58d16cea641f5f0d0392a7">TimeManager</a>
 </li>
+<li>getLookAt()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gaa6e64333d222b241a8c18980ef4c1cc1">IonCamera</a>
+</li>
+<li>getNearBottomLeft()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga766bf80d89fc38c753872d11b463e279">IonCamera</a>
+</li>
+<li>getNearBottomRight()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gacf0078a19062c4b0f62b0f29dc8139aa">IonCamera</a>
+</li>
+<li>getNearDist()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gae444c7af598980d393d750a390d292f7">IonCamera</a>
+</li>
+<li>getNearTopLeft()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gaa3570b2903e6563f9c76079623c9eb50">IonCamera</a>
+</li>
+<li>getNearTopRight()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga25af267a6e8f86c8c529225a4b828283">IonCamera</a>
+</li>
+<li>getPos()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga76cc6ad3f065b0d76a1b0a612f11dce2">IonCamera</a>
+</li>
+<li>getProjMatrix()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gafd5f7a0436b489a6560e4d87c473030c">IonCamera</a>
+</li>
+<li>getRight()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga08719b678dd3299fa45c1544a9b18c99">IonCamera</a>
+</li>
 <li>GetSceneCamera()
 : <a class="el" href="d6/db5/class_scene.html#a7b9c5efb989574e3451dc8e71e2bcd59">Scene</a>
 </li>
+<li>getScreenHeight()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga761f2f563c7565fab12ba185f8b6a2fe">IonCamera</a>
+</li>
+<li>getScreenWidth()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga46b965a040e88719ff48ecbf24b6473e">IonCamera</a>
+</li>
 <li>GetTime()
 : <a class="el" href="d9/d7f/class_time_manager.html#a187b37ea46e36d1bba730d833ce82540">TimeManager</a>
+</li>
+<li>getType()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gab4918796d1eccd1076d4aca90852732e">IonCamera</a>
+</li>
+<li>getUp()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga2f5813ef8ff869b47dfed3da3a71dc5b">IonCamera</a>
+</li>
+<li>getViewMatrix()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga37f7db5eb09c20d1c9fce8224fc8d3dc">IonCamera</a>
 </li>
 </ul>
 
@@ -184,6 +261,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>Initialize()
 : <a class="el" href="df/d02/group___s_c_e_n_e.html#gacb3e6fc9fa8ce199ff10a00d86834386">Scene</a>
+</li>
+<li>IonSprite()
+: <a class="el" href="d2/dc6/class_ion_sprite.html#a3b84412b5d106440d8cab3090b7d5b0e">IonSprite</a>
 </li>
 </ul>
 
@@ -200,9 +280,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>Load()
-: <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager</a>
+: <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager</a>
+, <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager</a>
 , <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager</a>
-, <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gac518063be998c112c6a408ca8c6c78ff">TextureManager</a>
+, <a class="el" href="d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager</a>
 </li>
 </ul>
 
@@ -221,6 +302,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>RegisterKey()
 : <a class="el" href="d3/d66/group___i_n_p_u_t-_e_v_e_n_t_s.html#ga825221cecc75cf84fc22195281281213">Inputable</a>
+</li>
+<li>Render()
+: <a class="el" href="d2/dc6/class_ion_sprite.html#ae02656bec60eab67a90f32e616d1a586">IonSprite</a>
 </li>
 </ul>
 
@@ -241,8 +325,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>SetAlarm()
 : <a class="el" href="dc/d38/group___a_l_a_r_m-_e_v_e_n_t_s.html#ga8fa8714e3601dd5c0113d2c1835fd182">Alarmable</a>
 </li>
+<li>SetAngle()
+: <a class="el" href="d2/dc6/class_ion_sprite.html#a99f00812041ea30b44dce8b3723ab705">IonSprite</a>
+</li>
 <li>SetCamera()
-: <a class="el" href="d6/db5/class_scene.html#ab33421d1f5fad7df52d85a83b9809a62">Scene</a>
+: <a class="el" href="d6/db5/class_scene.html#a80a6c171b5f2bea560f42602f871c2b9">Scene</a>
+</li>
+<li>SetCenter()
+: <a class="el" href="d2/dc6/class_ion_sprite.html#a9eeb327696f36915a35a6fb5fd75193e">IonSprite</a>
 </li>
 <li>SetColliderModel()
 : <a class="el" href="d2/d0e/group___c_o_l_l_i_s_i_o_n-_e_v_e_n_t_s.html#gaa6d1beabe13a24d5979766c72d8017b3">Collidable</a>
@@ -252,6 +342,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>SetCollisionSelf()
 : <a class="el" href="df/d02/group___s_c_e_n_e.html#gaf198d5dc3e3a472f32ef71100517323b">Scene</a>
+</li>
+<li>setFieldOfView()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gabdb848726b1ff624b53bdd24baf1181d">IonCamera</a>
+</li>
+<li>setNearDist()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga7ba7c9b1736e763e49cb157c804d330b">IonCamera</a>
+</li>
+<li>setOrientAndPosition()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga695a2895adae42e6932db8ed32c2918d">IonCamera</a>
+</li>
+<li>setOrthographic()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga1e727d1f5dcf6ed7eb632d1a9b164f06">IonCamera</a>
+</li>
+<li>setPerspective()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gad51b9b367915cec5e771db357de9ab65">IonCamera</a>
+</li>
+<li>SetPosition()
+: <a class="el" href="d2/dc6/class_ion_sprite.html#a1501c3e92e8730175b28c4cbfe922d4f">IonSprite</a>
+</li>
+<li>SetScale()
+: <a class="el" href="d2/dc6/class_ion_sprite.html#ae44e909061bc57b4882e334ff78d9726">IonSprite</a>
+</li>
+<li>setViewport()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga4a432197244c790a762d81b73b91fa42">IonCamera</a>
 </li>
 <li>StopAlarm()
 : <a class="el" href="dc/d38/group___a_l_a_r_m-_e_v_e_n_t_s.html#ga77c8f3186bdc24287dc9bf7b470e0323">Alarmable</a>
@@ -265,9 +379,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 
 
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>TargetWorldScreen()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#gac5523ba8c84034d42ba52c5fc298a846">IonCamera</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
 <li>Update()
-: <a class="el" href="da/dfc/group___u_p_d_a_t_e-_e_v_e_n_t_s.html#ga4bed06c6110e7a2fcb71c66cc30fa55e">Updatable</a>
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga6d5b547d2a89d55c3d4ac6a0295f200c">IonCamera</a>
+, <a class="el" href="da/dfc/group___u_p_d_a_t_e-_e_v_e_n_t_s.html#ga4bed06c6110e7a2fcb71c66cc30fa55e">Updatable</a>
+</li>
+<li>updateCamera()
+: <a class="el" href="de/da1/group___c_a_m_e_r_a.html#ga2f3a66b91217dc6d889ee8f717c426ba">IonCamera</a>
 </li>
 <li>UpdateCollisionData()
 : <a class="el" href="d2/d0e/group___c_o_l_l_i_s_i_o_n-_e_v_e_n_t_s.html#gad28b334896831067381461249cecc2fa">Collidable</a>

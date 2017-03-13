@@ -28,7 +28,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">Ion Engine 0.8.1</a>
+                    <a class="navbar-brand">Ion Engine 0.10.1</a>
                 </div>
             </div>
         </nav>
@@ -104,15 +104,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>The space in which gameobjects exist.  
  <a href="../../d6/db5/class_scene.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../de/d56/_scene_8h_source.html">Scene.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../de/d56/_scene_8h_source.html">C:/Users/Ian/Perforce/iklask_Andre_WINTER2017/berthiaume2017winter_gam374/student/iklask/FinalSprint/src/Ion Engine/Scene.h</a>&gt;</code></p>
 
 <p>Inherited by NullScene.</p>
 <div class="dynheader">
 Collaboration diagram for Scene:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d4/d7f/class_scene__coll__graph.png" border="0" usemap="#_scene_coll__map" alt="Collaboration graph"/></div>
-<map name="_scene_coll__map" id="_scene_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -126,9 +124,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b9c5efb989574e3451dc8e71e2bcd59"><td class="memItemLeft" align="right" valign="top">Camera *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db5/class_scene.html#a7b9c5efb989574e3451dc8e71e2bcd59">GetSceneCamera</a> ()</td></tr>
 <tr class="memdesc:a7b9c5efb989574e3451dc8e71e2bcd59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the current scene's camera.  <a href="#a7b9c5efb989574e3451dc8e71e2bcd59">More...</a><br /></td></tr>
 <tr class="separator:a7b9c5efb989574e3451dc8e71e2bcd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab33421d1f5fad7df52d85a83b9809a62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db5/class_scene.html#ab33421d1f5fad7df52d85a83b9809a62">SetCamera</a> (Camera *cam)</td></tr>
-<tr class="memdesc:ab33421d1f5fad7df52d85a83b9809a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the current scene's camera.  <a href="#ab33421d1f5fad7df52d85a83b9809a62">More...</a><br /></td></tr>
-<tr class="separator:ab33421d1f5fad7df52d85a83b9809a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ec5afd2ee67245a334924d4c05c08d"><td class="memItemLeft" align="right" valign="top">Camera *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db5/class_scene.html#a76ec5afd2ee67245a334924d4c05c08d">GetCamera2D</a> ()</td></tr>
+<tr class="memdesc:a76ec5afd2ee67245a334924d4c05c08d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the current scene's 2D camera.  <a href="#a76ec5afd2ee67245a334924d4c05c08d">More...</a><br /></td></tr>
+<tr class="separator:a76ec5afd2ee67245a334924d4c05c08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a6c171b5f2bea560f42602f871c2b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db5/class_scene.html#a80a6c171b5f2bea560f42602f871c2b9">SetCamera</a> (<a class="el" href="../../d1/d96/class_ion_camera.html">IonCamera</a> *cam)</td></tr>
+<tr class="memdesc:a80a6c171b5f2bea560f42602f871c2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the current scene's <a class="el" href="../../d1/d96/class_ion_camera.html" title="Camera wrapper base class for making custom cameras. ">IonCamera</a>.  <a href="#a80a6c171b5f2bea560f42602f871c2b9">More...</a><br /></td></tr>
+<tr class="separator:a80a6c171b5f2bea560f42602f871c2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -152,6 +153,32 @@ template&lt;typename C &gt; </td></tr>
 </ul>
 <p>The scene class also allows access to setting/getting the current camera and registering collision pairs. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a76ec5afd2ee67245a334924d4c05c08d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Camera* Scene::GetCamera2D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to get the current scene's 2D camera. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to camera object. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7b9c5efb989574e3451dc8e71e2bcd59"></a>
 <div class="memitem">
 <div class="memproto">
@@ -174,11 +201,11 @@ template&lt;typename C &gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Function to get the current scene's camera. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to camera object </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to camera object. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ab33421d1f5fad7df52d85a83b9809a62"></a>
+<a class="anchor" id="a80a6c171b5f2bea560f42602f871c2b9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -188,7 +215,7 @@ template&lt;typename C &gt; </td></tr>
         <tr>
           <td class="memname">void Scene::SetCamera </td>
           <td>(</td>
-          <td class="paramtype">Camera *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d96/class_ion_camera.html">IonCamera</a> *&#160;</td>
           <td class="paramname"><em>cam</em></td><td>)</td>
           <td></td>
         </tr>
@@ -200,10 +227,10 @@ template&lt;typename C &gt; </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Function to set the current scene's camera. </p>
+<p>Function to set the current scene's <a class="el" href="../../d1/d96/class_ion_camera.html" title="Camera wrapper base class for making custom cameras. ">IonCamera</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cam</td><td>Pointer to camera object </td></tr>
+    <tr><td class="paramname">cam</td><td>Pointer to <a class="el" href="../../d1/d96/class_ion_camera.html" title="Camera wrapper base class for making custom cameras. ">IonCamera</a> object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -211,8 +238,8 @@ template&lt;typename C &gt; </td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="../../de/d56/_scene_8h_source.html">Scene.h</a></li>
-<li>Scene.cpp</li>
+<li>C:/Users/Ian/Perforce/iklask_Andre_WINTER2017/berthiaume2017winter_gam374/student/iklask/FinalSprint/src/Ion Engine/<a class="el" href="../../de/d56/_scene_8h_source.html">Scene.h</a></li>
+<li>C:/Users/Ian/Perforce/iklask_Andre_WINTER2017/berthiaume2017winter_gam374/student/iklask/FinalSprint/src/Ion Engine/Scene.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->

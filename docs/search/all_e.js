@@ -1,10 +1,17 @@
 var searchData=
 [
-  ['red',['Red',['../d9/d44/struct_color.html#ae115f546073b973028ed9a2c5b86969b',1,'Color']]],
-  ['register',['Register',['../d0/d9b/group___d_r_a_w-_e_v_e_n_t_s.html#gaa0ba9819c96ce0f2d55fd95497438a85',1,'Drawable::Register()'],['../da/dfc/group___u_p_d_a_t_e-_e_v_e_n_t_s.html#gaec767ebafab4d613e34197a29db4ff05',1,'Updatable::Register()']]],
-  ['registerkey',['RegisterKey',['../d3/d66/group___i_n_p_u_t-_e_v_e_n_t_s.html#ga825221cecc75cf84fc22195281281213',1,'Inputable']]],
-  ['regmap',['RegMap',['../d6/d0f/class_inputable.html#a9d406641c391d9f3e58ce29c0ab056ea',1,'Inputable']]],
-  ['resources',['Resources',['../d7/d2d/group___r_e_s_o_u_r_c_e_s.html',1,'']]],
-  ['rosybrown',['RosyBrown',['../d9/d44/struct_color.html#a62624e2a5ff333b7087edf831b284d3a',1,'Color']]],
-  ['royalblue',['RoyalBlue',['../d9/d44/struct_color.html#a1502bbe975194ca09d71dfa7a1138b92',1,'Color']]]
+  ['palegoldenrod',['PaleGoldenrod',['../d9/d44/struct_color.html#a833d574cbc2d0805c7e1b9ebf7583b89',1,'Color']]],
+  ['palegreen',['PaleGreen',['../d9/d44/struct_color.html#ad1346bdab9bfd0765d7440402f6064b9',1,'Color']]],
+  ['paleturquoise',['PaleTurquoise',['../d9/d44/struct_color.html#a515e79f29b3e61ef82f915821ff6a34f',1,'Color']]],
+  ['palevioletred',['PaleVioletRed',['../d9/d44/struct_color.html#a7cfbe1978c1545ba207f15039a9039d2',1,'Color']]],
+  ['papayawhip',['PapayaWhip',['../d9/d44/struct_color.html#ac794dfbd2f7a3e56260c86e1131a6e9b',1,'Color']]],
+  ['pcamera',['pCamera',['../d1/d96/class_ion_camera.html#aa0b1e4b6910deeb32705e77441590b7e',1,'IonCamera']]],
+  ['pcolmodel',['pColModel',['../d8/deb/class_collidable.html#a084e9c711898fd8406d56ffc555ac36e',1,'Collidable']]],
+  ['peachpuff',['PeachPuff',['../d9/d44/struct_color.html#a6cb86e351f20e160d46fb62140a5e02c',1,'Color']]],
+  ['peru',['Peru',['../d9/d44/struct_color.html#a4cb2bb34e5268ee33067343c6b3fe42b',1,'Color']]],
+  ['pink',['Pink',['../d9/d44/struct_color.html#ae65a509cb6512042b2996a1a3a155c0b',1,'Color']]],
+  ['plum',['Plum',['../d9/d44/struct_color.html#adb437bd34381ea739e5d438bc84c2a79',1,'Color']]],
+  ['powderblue',['PowderBlue',['../d9/d44/struct_color.html#a764cdf7759e44095f47d3edd18620283',1,'Color']]],
+  ['processtime',['ProcessTime',['../d9/d7f/class_time_manager.html#a4c75fdfc2d3172dff02f3db29eb543ea',1,'TimeManager']]],
+  ['purple',['Purple',['../d9/d44/struct_color.html#a281e4d2218ce3355d0a2ab447fad224b',1,'Color']]]
 ];

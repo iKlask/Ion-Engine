@@ -28,7 +28,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">Ion Engine 0.8.1</a>
+                    <a class="navbar-brand">Ion Engine 0.10.1</a>
                 </div>
             </div>
         </nav>
@@ -105,6 +105,15 @@ Collaboration diagram for Resources:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga7131e25e45784e5f608578cde03f3b17"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager::Load</a> (const ImageKey &amp;Image_Map_Key, Texture *pTexture)</td></tr>
+<tr class="memdesc:ga7131e25e45784e5f608578cde03f3b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function saves a Image created from the desired texture.  <a href="#ga7131e25e45784e5f608578cde03f3b17">More...</a><br /></td></tr>
+<tr class="separator:ga7131e25e45784e5f608578cde03f3b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeff568ac2e7a82931b143fd29bb0e11f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaeff568ac2e7a82931b143fd29bb0e11f">ImageManager::Load</a> (const ImageKey &amp;Image_Map_Key, Texture *pTexture, Rect *Sub_Image_Rect)</td></tr>
+<tr class="memdesc:gaeff568ac2e7a82931b143fd29bb0e11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function saves a Image created from the desired tecture.  <a href="#gaeff568ac2e7a82931b143fd29bb0e11f">More...</a><br /></td></tr>
+<tr class="separator:gaeff568ac2e7a82931b143fd29bb0e11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf7d902501f0f171323b515ba88eda6a"><td class="memItemLeft" align="right" valign="top">static Image *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gadf7d902501f0f171323b515ba88eda6a">ImageManager::Get</a> (const ImageKey &amp;Image_Map_Key)</td></tr>
+<tr class="memdesc:gadf7d902501f0f171323b515ba88eda6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function returns Image pointer based off of the passed in key.  <a href="#gadf7d902501f0f171323b515ba88eda6a">More...</a><br /></td></tr>
+<tr class="separator:gadf7d902501f0f171323b515ba88eda6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66c5e9cc4416e5709ba5785b55ab0165"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a> (const ModelKey &amp;Model_Map_Key, const char *Model_File_Path)</td></tr>
 <tr class="memdesc:ga66c5e9cc4416e5709ba5785b55ab0165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function saves a model created from the desired path.  <a href="#ga66c5e9cc4416e5709ba5785b55ab0165">More...</a><br /></td></tr>
 <tr class="separator:ga66c5e9cc4416e5709ba5785b55ab0165"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,14 +147,15 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Loading external resources into the game. </p>
-<p>The user is able to load external resources into the game via the LoadResources.cpp an its LoadResources() function. Inside the function the user can use the Asset Manager classes to load resources from the Assets folder. The Asset Managers include:</p><ul>
+<p>The user is able to load external resources into the game via the LoadResources.cpp an its IonEngine::LoadResources() function. Inside the function the user can use the Asset Manager classes to load resources from the Assets folder. The Asset Managers include:</p><ul>
 <li><a class="el" href="../../db/ddf/class_texture_manager.html" title="System manager for saving and accessing external texture resources. ">TextureManager</a></li>
 <li><a class="el" href="../../d3/d3a/class_model_manager.html" title="System manager for saving and accessing external model resources. ">ModelManager</a></li>
 <li><a class="el" href="../../d2/d24/class_shader_manager.html" title="System manager for saving and accessing external shader resources. ">ShaderManager</a></li>
+<li><a class="el" href="../../d2/d39/class_image_manager.html" title="System manager for saving and accessing Images from external resources. ">ImageManager</a></li>
 </ul>
 <p>These three can be used like so for loading assets:</p>
-<p>LoadResources.cpp: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> IonEngine::LoadResources()</div><div class="line">{</div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Load the Models</span></div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Model from file ( .azul format)</span></div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelSpaceFrigate&quot;</span>, <span class="stringliteral">&quot;Models/space_frigate.azul&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelBSphere&quot;</span>, <span class="stringliteral">&quot;Models/BoundingSphere.azul&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelAxis&quot;</span>, <span class="stringliteral">&quot;Models/Axis.azul&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelPlane&quot;</span>, <span class="stringliteral">&quot;Models/Plane.azul&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelPyramid&quot;</span>, <span class="stringliteral">&quot;Models/pyramid.azul&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelCottage&quot;</span>, <span class="stringliteral">&quot;Models/Cottage.azul&quot;</span>);</div><div class="line"></div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Load the Textures</span></div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Direct loads</span></div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;FrigateTex&quot;</span>, <span class="stringliteral">&quot;Textures/space_frigate.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;GridTex&quot;</span>, <span class="stringliteral">&quot;Textures/grid.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TestTexCol&quot;</span>, 255, 0, 128);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;modelPyramid&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;modelCottage&quot;</span>);</div><div class="line"></div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Load the Shaders</span></div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;TextureFlat&quot;</span>, <span class="stringliteral">&quot;Shaders/textureFlatRender&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;TextureLight&quot;</span>, <span class="stringliteral">&quot;Shaders/textureLightRender&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;ColorConstant&quot;</span>, <span class="stringliteral">&quot;Shaders/colorConstantRender&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;ColorNoTexture&quot;</span>, <span class="stringliteral">&quot;Shaders/colorNoTextureRender&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;ColorNoTextureLight&quot;</span>, <span class="stringliteral">&quot;Shaders/colorNoTextureLightRender&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;ColorWheel&quot;</span>, <span class="stringliteral">&quot;Shaders/colorVaryRender&quot;</span>);</div><div class="line">}</div></div><!-- fragment --><p>As you can see, the Asset Managers use their Load() functions to create and store instances of objects based off the given file path under a specified key. Later, these objects can be retrived using the Asset Managers' Get() functions with the spefified key. That would look something like this:</p>
-<p>Frigate.cpp </p><div class="fragment"><div class="line">Frigate::Frigate()</div><div class="line">{</div><div class="line">    ...</div><div class="line">    pGObj_Space_Frigate = <span class="keyword">new</span> GraphicsObject_TextureLight(<a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga37277807b154fc2977039c46afef0a18">ModelManager::Get</a>(<span class="stringliteral">&quot;modelSpaceFrigate&quot;</span>), <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga67813d4b48bb32a688007c5523b36cd8">ShaderManager::Get</a>(<span class="stringliteral">&quot;TextureLight&quot;</span>), <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;FrigateTex&quot;</span>), LightColor, LightPos);</div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
+<p>LoadResources.cpp: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> IonEngine::LoadResources()</div><div class="line">{</div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Load the Models</span></div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Model from file ( .azul format)</span></div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelPlane&quot;</span>, <span class="stringliteral">&quot;Models/Plane.azul&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelBSphere&quot;</span>, <span class="stringliteral">&quot;Models/BoundingSphere.azul&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelTankBody&quot;</span>, <span class="stringliteral">&quot;Models/Tank_Body.azul&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelTankTurret&quot;</span>, <span class="stringliteral">&quot;Models/Tank_Turret.azul&quot;</span>);</div><div class="line">    </div><div class="line">    </div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga66c5e9cc4416e5709ba5785b55ab0165">ModelManager::Load</a>(<span class="stringliteral">&quot;modelAxis&quot;</span>, <span class="stringliteral">&quot;Models/Axis.azul&quot;</span>);</div><div class="line">    </div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Load the Textures</span></div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Direct loads</span></div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexTankBody&quot;</span>, <span class="stringliteral">&quot;Textures/Tank_Body.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexTankTreads&quot;</span>, <span class="stringliteral">&quot;Textures/Tank_Track.tga&quot;</span>);</div><div class="line">    </div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexTankHud&quot;</span>, <span class="stringliteral">&quot;Textures/Tank_HUD.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexTankHudRotBODY&quot;</span>, <span class="stringliteral">&quot;Textures/Tank_HUD_Rot_BODY.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexTankHudRotTURRET&quot;</span>, <span class="stringliteral">&quot;Textures/Tank_HUD_Rot_TURRET.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexShellLoading&quot;</span>, <span class="stringliteral">&quot;Textures/APShell_Loading.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexShellReady&quot;</span>, <span class="stringliteral">&quot;Textures/APShell_Ready.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexShellWait&quot;</span>, <span class="stringliteral">&quot;Textures/Tank_HUD_Wait.tga&quot;</span>);</div><div class="line">    </div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexWinScreen&quot;</span>, <span class="stringliteral">&quot;Textures/WinScreen.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexLoseScreen&quot;</span>, <span class="stringliteral">&quot;Textures/LoseScreen.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexMainScreen&quot;</span>, <span class="stringliteral">&quot;Textures/MenuLogo.tga&quot;</span>);</div><div class="line">    </div><div class="line">    </div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexGrass&quot;</span>, <span class="stringliteral">&quot;Textures/sandgrass.tga&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gacef4a76152bda4e85679a473953eff71">TextureManager::Load</a>(<span class="stringliteral">&quot;TexFlatColor&quot;</span>, 255, 0, 128);</div><div class="line">    </div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Load Images</span></div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager::Load</a>(<span class="stringliteral">&quot;TankHudImage&quot;</span>, <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexTankHud&quot;</span>));</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager::Load</a>(<span class="stringliteral">&quot;TankHudRotBODYImage&quot;</span>, <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexTankHudRotBODY&quot;</span>));</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager::Load</a>(<span class="stringliteral">&quot;TankHudRotTURRETImage&quot;</span>, <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexTankHudRotTURRET&quot;</span>));</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager::Load</a>(<span class="stringliteral">&quot;ShellLoadingImage&quot;</span>, <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexShellLoading&quot;</span>));</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager::Load</a>(<span class="stringliteral">&quot;ShellReadyImage&quot;</span>, <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexShellReady&quot;</span>));</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager::Load</a>(<span class="stringliteral">&quot;ShellWaitImage&quot;</span>, <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexShellWait&quot;</span>));</div><div class="line">    </div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager::Load</a>(<span class="stringliteral">&quot;WinScreenImage&quot;</span>, <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexWinScreen&quot;</span>));</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager::Load</a>(<span class="stringliteral">&quot;LoseScreenImage&quot;</span>, <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexLoseScreen&quot;</span>));</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17">ImageManager::Load</a>(<span class="stringliteral">&quot;MainScreenImage&quot;</span>, <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexMainScreen&quot;</span>));</div><div class="line">    </div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <span class="comment">// Load the Shaders</span></div><div class="line">    <span class="comment">//---------------------------------------------------------------------------------------------------------</span></div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;TextureFlat&quot;</span>, <span class="stringliteral">&quot;Shaders/textureFlatRender&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;TextureLight&quot;</span>, <span class="stringliteral">&quot;Shaders/textureLightRender&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;ColorConstant&quot;</span>, <span class="stringliteral">&quot;Shaders/colorConstantRender&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;ColorNoTexture&quot;</span>, <span class="stringliteral">&quot;Shaders/colorNoTextureRender&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;ColorNoTextureLight&quot;</span>, <span class="stringliteral">&quot;Shaders/colorNoTextureLightRender&quot;</span>);</div><div class="line">    <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gab7aff33ae5d3ca923918556aa728bbe3">ShaderManager::Load</a>(<span class="stringliteral">&quot;ColorWheel&quot;</span>, <span class="stringliteral">&quot;Shaders/colorVaryRender&quot;</span>);</div><div class="line">}</div></div><!-- fragment --><p>As you can see, the Asset Managers use their Load() functions to create and store instances of objects based off the given file path under a specified key. Later, these objects can be retrived using the Asset Managers' Get() functions with the spefified key. That would look something like this:</p>
+<p>Frigate.cpp </p><div class="fragment"><div class="line">Tank::Tank()</div><div class="line">{</div><div class="line">    Vect LightColor(1.50f, 1.50f, 1.50f, 1.0f);</div><div class="line">    Vect LightPos(1.0f, 1.0f, 1.0f, 1.0f);</div><div class="line">    pGObj_Tank_Body = <span class="keyword">new</span> GraphicsObject_TextureLight(<a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga37277807b154fc2977039c46afef0a18">ModelManager::Get</a>(<span class="stringliteral">&quot;modelTankBody&quot;</span>), <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga67813d4b48bb32a688007c5523b36cd8">ShaderManager::Get</a>(<span class="stringliteral">&quot;TextureLight&quot;</span>), <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexTankTreads&quot;</span>), <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexTankBody&quot;</span>), <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexTankBody&quot;</span>), LightColor, LightPos);</div><div class="line">    pGObj_Tank_Turret = <span class="keyword">new</span> GraphicsObject_TextureLight(<a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga37277807b154fc2977039c46afef0a18">ModelManager::Get</a>(<span class="stringliteral">&quot;modelTankTurret&quot;</span>), <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga67813d4b48bb32a688007c5523b36cd8">ShaderManager::Get</a>(<span class="stringliteral">&quot;TextureLight&quot;</span>), <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexTankBody&quot;</span>), <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexTankBody&quot;</span>), <a class="code" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gaa3d93aab2decf9bdf8ae1b4d77ee19f5">TextureManager::Get</a>(<span class="stringliteral">&quot;TexTankBody&quot;</span>), LightColor, LightPos);</div><div class="line">}</div></div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga37277807b154fc2977039c46afef0a18"></a>
 <div class="memitem">
 <div class="memproto">
@@ -211,6 +221,40 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to shader at stored key </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadf7d902501f0f171323b515ba88eda6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Image* ImageManager::Get </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d39/class_image_manager.html#a3694e256353c653be20af281a938b32b">ImageKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>Image_Map_Key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function returns Image pointer based off of the passed in key. </p>
+<p>This <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gadf7d902501f0f171323b515ba88eda6a" title="Function returns Image pointer based off of the passed in key. ">Get()</a> function uses it's Image_Map_Key parameter to search the Image map and return the Image saved under the same key string.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Image_Map_Key</td><td>An std::string for use as a key to access the stored Image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to Image at stored key </dd></dl>
 
 </div>
 </div>
@@ -420,6 +464,101 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">Texture_Map_Key</td><td>An std::string for use as a storage key</td></tr>
     <tr><td class="paramname">Texture_File_Path</td><td>A char string to the file path (starting in the "Assets" directory) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7131e25e45784e5f608578cde03f3b17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImageManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d39/class_image_manager.html#a3694e256353c653be20af281a938b32b">ImageKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>Image_Map_Key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Texture *&#160;</td>
+          <td class="paramname"><em>pTexture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function saves a Image created from the desired texture. </p>
+<p>This <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17" title="Function saves a Image created from the desired texture. ">Load()</a> function creates and stores a Image pointer based off of the pTexture parameter. The Image_Map_Key parameter is a key string for access later when using the <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gadf7d902501f0f171323b515ba88eda6a" title="Function returns Image pointer based off of the passed in key. ">Get()</a> command. This function grabs the entire texture as an image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Image_Map_Key</td><td>An std::string for use as a storage key</td></tr>
+    <tr><td class="paramname">pTexture</td><td>A Texture pointer to grab the image from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaeff568ac2e7a82931b143fd29bb0e11f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImageManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d39/class_image_manager.html#a3694e256353c653be20af281a938b32b">ImageKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>Image_Map_Key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Texture *&#160;</td>
+          <td class="paramname"><em>pTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Rect *&#160;</td>
+          <td class="paramname"><em>Sub_Image_Rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function saves a Image created from the desired tecture. </p>
+<p>This <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga7131e25e45784e5f608578cde03f3b17" title="Function saves a Image created from the desired texture. ">Load()</a> function creates and stores a Image pointer based off of the pTexture and Sub_Image_Rect parameters. The Image_Map_Key parameter is a key string for access later when using the <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#gadf7d902501f0f171323b515ba88eda6a" title="Function returns Image pointer based off of the passed in key. ">Get()</a> command. This function grabs a specific sub-image from the texture (based on the Sub_Image_Rect).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Image_Map_Key</td><td>An std::string for use as a storage key</td></tr>
+    <tr><td class="paramname">pTexture</td><td>A Texture pointer to grab the image from</td></tr>
+    <tr><td class="paramname">Sub_Image_Rect</td><td>A rectangle to specify the sub-image to gram from the texture </td></tr>
   </table>
   </dd>
 </dl>

@@ -12,6 +12,7 @@ var searchData=
   ['coral',['Coral',['../d9/d44/struct_color.html#acb0d36179f4d70cfd2799a0144fe6ee0',1,'Color']]],
   ['cornflowerblue',['CornflowerBlue',['../d9/d44/struct_color.html#ad7a0bb60ec74c067d9d579d76f0f781c',1,'Color']]],
   ['cornsilk',['Cornsilk',['../d9/d44/struct_color.html#a1527a0aac751435df87c0d25134368c4',1,'Color']]],
+  ['correctfororigin',['CorrectForOrigin',['../de/da1/group___c_a_m_e_r_a.html#ga6d29e40b93ea9f2c226a68b137d3e0cc',1,'IonCamera']]],
   ['crimson',['Crimson',['../d9/d44/struct_color.html#af61b22e4fc3cd0c7640bc6ac9ae93a3c',1,'Color']]],
   ['cyan',['Cyan',['../d9/d44/struct_color.html#a8c8484c46a6306e964a0236585715de1',1,'Color']]]
 ];

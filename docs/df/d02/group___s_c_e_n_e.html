@@ -28,7 +28,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">Ion Engine 0.8.1</a>
+                    <a class="navbar-brand">Ion Engine 0.10.1</a>
                 </div>
             </div>
         </nav>
@@ -130,31 +130,60 @@ template&lt;typename C &gt; </td></tr>
 <tr class="memitem:gab5eb34dd0bfb162d487557d03baff8b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/group___s_c_e_n_e.html#gab5eb34dd0bfb162d487557d03baff8b9">IonEngine::InitializeEngine</a> ()</td></tr>
 <tr class="memdesc:gab5eb34dd0bfb162d487557d03baff8b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public engine function for initialization of the engine.  <a href="#gab5eb34dd0bfb162d487557d03baff8b9">More...</a><br /></td></tr>
 <tr class="separator:gab5eb34dd0bfb162d487557d03baff8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e10ace63690d29b73054e45ea7c38ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/group___s_c_e_n_e.html#ga0e10ace63690d29b73054e45ea7c38ae">IonEngine::EngineEnd</a> ()</td></tr>
+<tr class="memdesc:ga0e10ace63690d29b73054e45ea7c38ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public engine function that is called when shitting down.  <a href="#ga0e10ace63690d29b73054e45ea7c38ae">More...</a><br /></td></tr>
+<tr class="separator:ga0e10ace63690d29b73054e45ea7c38ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>A <a class="el" href="../../d6/db5/class_scene.html" title="The space in which gameobjects exist. ">Scene</a> is the space in which GameObjects exist. </p>
 <p>The user is able to set create their own <a class="el" href="../../d6/db5/class_scene.html" title="The space in which gameobjects exist. ">Scene</a> objects which act as levels. The scene is a space that holds the active GameObjects and game entities.</p>
 <p>The <a class="el" href="../../d6/db5/class_scene.html" title="The space in which gameobjects exist. ">Scene</a> base class only has two pure virtual functions to override:</p><ul>
-<li>Initialize()</li>
-<li>SceneEnd()</li>
+<li><a class="el" href="../../df/d02/group___s_c_e_n_e.html#gacb3e6fc9fa8ce199ff10a00d86834386" title="Function to be called upon initialization of the scene. ">Scene::Initialize()</a></li>
+<li><a class="el" href="../../df/d02/group___s_c_e_n_e.html#ga00751100a1ad902c98e58b8a0e6db99b" title="Function to be called upon the end of the scene. ">Scene::SceneEnd()</a></li>
 </ul>
-<p><b>Initialize()</b> is called by the <a class="el" href="../../d0/dc3/class_scene_manager.html" title="System manager for storage and access to the current scene. ">SceneManager</a> when the scene start up. The user should place code that creates, initializes, and registers GameObjects and game entities here. A very simple <a class="el" href="../../df/d02/group___s_c_e_n_e.html#gacb3e6fc9fa8ce199ff10a00d86834386" title="Function to be called upon initialization of the scene. ">Scene::Initialize()</a> may look like this:</p>
-<p>UserScene.cpp: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> UserScene::Initialize()</div><div class="line">{</div><div class="line">    BulletFactory::Initialize();</div><div class="line"></div><div class="line">    player_Frigate = <span class="keyword">new</span> Frigate();</div><div class="line">    enemy_Frigate = <span class="keyword">new</span> EnemyFrigate();</div><div class="line">    obj_WorldPlane = <span class="keyword">new</span> WorldPlane();</div><div class="line"></div><div class="line">    followCam = <span class="keyword">new</span> FollowCam();</div><div class="line"></div><div class="line">    <span class="comment">//sets the scene&#39;s camera</span></div><div class="line">    this-&gt;SetCamera(followCam-&gt;getCamera());</div><div class="line"></div><div class="line">    <span class="comment">//register collidable pairs</span></div><div class="line">    SetCollisionPair&lt;Frigate, EnemyFrigate&gt;();</div><div class="line">    SetCollisionPair&lt;Bullet, EnemyFrigate&gt;();</div><div class="line">}</div></div><!-- fragment --><p>This scene has four objects:</p><ul>
-<li>A Frigate</li>
-<li>An EnemyFrigate</li>
+<p><b><a class="el" href="../../df/d02/group___s_c_e_n_e.html#gacb3e6fc9fa8ce199ff10a00d86834386" title="Function to be called upon initialization of the scene. ">Scene::Initialize()</a></b> is called by the <a class="el" href="../../d0/dc3/class_scene_manager.html" title="System manager for storage and access to the current scene. ">SceneManager</a> when the scene start up. The user should place code that creates, initializes, and registers GameObjects and game entities here. A very simple <a class="el" href="../../df/d02/group___s_c_e_n_e.html#gacb3e6fc9fa8ce199ff10a00d86834386" title="Function to be called upon initialization of the scene. ">Scene::Initialize()</a> may look like this:</p>
+<p>UserScene.cpp: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> UserScene::Initialize()</div><div class="line">{</div><div class="line">    obj_Tank = <span class="keyword">new</span> Tank();</div><div class="line">    EnemyFactory::CreateEnemyTank(Vect(750, 1, 500), obj_Tank-&gt;GetTankPos());</div><div class="line"></div><div class="line">    fpCam = <span class="keyword">new</span> FirstPersonCam(obj_Tank-&gt;GetCamPos(), obj_Tank-&gt;GetCamRot());</div><div class="line">    this-&gt;SetCamera(fpCam);</div><div class="line"></div><div class="line">    obj_WorldPlane = <span class="keyword">new</span> WorldPlane();</div><div class="line"></div><div class="line">    obj_WorldPlane-&gt;SubmitEntry();</div><div class="line">    obj_Tank-&gt;SubmitEntry();</div><div class="line"></div><div class="line">    SetCollisionPair&lt;Tank, Bullet&gt;();</div><div class="line">    SetCollisionPair&lt;EnemyTank, Bullet&gt;();</div><div class="line">    SetCollisionSelf&lt;Bullet&gt;();</div><div class="line">}</div></div><!-- fragment --><p>This scene has three objects:</p><ul>
+<li>A Tank</li>
 <li>A WorldPlane</li>
-<li>A FollowCam</li>
+<li>A FirstPersonCam</li>
 </ul>
-<p>The scene also initialized a factory singlton, sets a user made camera and registers two collision pairs.</p>
-<p><b>SceneEnd()</b> is called by the <a class="el" href="../../d0/dc3/class_scene_manager.html" title="System manager for storage and access to the current scene. ">SceneManager</a> when the scene is about to be destroyed. The user should place code that destroys and deregisters GameObjects and game entities here. A very simple <a class="el" href="../../df/d02/group___s_c_e_n_e.html#ga00751100a1ad902c98e58b8a0e6db99b" title="Function to be called upon the end of the scene. ">Scene::SceneEnd()</a> may look like this:</p>
-<p>UserScene.cpp: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> UserScene::SceneEnd()</div><div class="line">{</div><div class="line">    BulletFactory::Delete();</div><div class="line">}</div></div><!-- fragment --><p>Note that pointers are not being deleted in the SceneEnd() function. Genral C++ cleanup like 'delete' will stay within the scene's destructor.</p>
+<p>The scene also calls a factory singlton to create an EnemyTank object, it sets a user made <a class="el" href="../../d1/d96/class_ion_camera.html" title="Camera wrapper base class for making custom cameras. ">IonCamera</a>, and registers collision pairs.</p>
+<p><b><a class="el" href="../../df/d02/group___s_c_e_n_e.html#ga00751100a1ad902c98e58b8a0e6db99b" title="Function to be called upon the end of the scene. ">Scene::SceneEnd()</a></b> is called by the <a class="el" href="../../d0/dc3/class_scene_manager.html" title="System manager for storage and access to the current scene. ">SceneManager</a> when the scene is about to be destroyed. The user should place code that destroys and deregisters GameObjects and game entities here. A very simple <a class="el" href="../../df/d02/group___s_c_e_n_e.html#ga00751100a1ad902c98e58b8a0e6db99b" title="Function to be called upon the end of the scene. ">Scene::SceneEnd()</a> may look like this:</p>
+<p>UserScene.cpp: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> UserScene::SceneEnd()</div><div class="line">{</div><div class="line">    obj_Tank-&gt;SubmitExit();</div><div class="line">    obj_WorldPlane-&gt;SubmitExit();</div><div class="line">    </div><div class="line">    <span class="comment">//clean up all factories</span></div><div class="line">    BulletFactory::Delete();</div><div class="line">    EnemyFactory::Delete();</div><div class="line">}</div></div><!-- fragment --><p>Note that pointers are not being deleted in the <a class="el" href="../../df/d02/group___s_c_e_n_e.html#ga00751100a1ad902c98e58b8a0e6db99b" title="Function to be called upon the end of the scene. ">Scene::SceneEnd()</a> function. Genral C++ cleanup like 'delete' will stay within the scene's destructor.</p>
 <p>The <a class="el" href="../../d0/dc3/class_scene_manager.html" title="System manager for storage and access to the current scene. ">SceneManager</a> holds functions for getting and setting the current <a class="el" href="../../d6/db5/class_scene.html" title="The space in which gameobjects exist. ">Scene</a>:</p><ul>
-<li>GetCurrentScene()</li>
-<li>SceneChange()</li>
+<li><a class="el" href="../../df/d02/group___s_c_e_n_e.html#gab279cee8a7ac9b166bd5e7c379043cbe" title="Function for acquiring a pointer to the current scene. ">SceneManager::GetCurrentScene()</a></li>
+<li><a class="el" href="../../df/d02/group___s_c_e_n_e.html#ga23a75bd66e89e93e28c60e0ba0aafa5f" title="Function for changing the scene. ">SceneManager::SceneChange()</a></li>
 </ul>
 <p>These can be used throughout the user's code to access the current scene or to switch scenes.</p>
-<p>The user also has access to the IonEngine::InitializeEngine() function. Within this function the user can initialize singletons, set up window properties, and most importantly: set the first scene. By default the <a class="el" href="../../d0/dc3/class_scene_manager.html" title="System manager for storage and access to the current scene. ">SceneManager</a> will set the current scene to a completely empty scene called a NullScene. A simple InitializeEngine() function may look like this:</p>
-<p>InitializeEngine.cpp: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> IonEngine::InitializeEngine()</div><div class="line">{</div><div class="line">    <span class="comment">// Use this area, for one time non-graphic creation</span></div><div class="line"></div><div class="line">    <span class="comment">//Creates and Sets first scene</span></div><div class="line">    <a class="code" href="../../df/d02/group___s_c_e_n_e.html#ga23a75bd66e89e93e28c60e0ba0aafa5f">SceneManager::SceneChange</a>(<span class="keyword">new</span> UserScene());</div><div class="line"></div><div class="line">    <span class="comment">// IonEngine Window Device setup</span></div><div class="line">    IonEngine::SetWindowName(<span class="stringliteral">&quot;Ion Engine Demo&quot;</span>);</div><div class="line">    IonEngine::SetWidthHeight(800, 600);</div><div class="line">    IonEngine::SetBackgroundColor(0.4f, 0.4f, 0.8f, 1.0f);</div><div class="line">}</div></div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
+<p>The user also has access to the IonEngine::InitializeEngine() function. Within this function the user can initialize singletons, set up window properties, and set the first scene. By default the <a class="el" href="../../d0/dc3/class_scene_manager.html" title="System manager for storage and access to the current scene. ">SceneManager</a> will set the current scene to a completely empty scene called a NullScene. A simple IonEngine::InitializeEngine() function may look like this:</p>
+<p>InitializeEngine.cpp: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> IonEngine::InitializeEngine()</div><div class="line">{</div><div class="line">    <span class="comment">// Use this area, for one time non-graphic creation</span></div><div class="line"></div><div class="line">    <span class="comment">//Creates and Sets first scene</span></div><div class="line">    <a class="code" href="../../df/d02/group___s_c_e_n_e.html#ga23a75bd66e89e93e28c60e0ba0aafa5f">SceneManager::SceneChange</a>(<span class="keyword">new</span> UserScene());</div><div class="line"></div><div class="line">    <span class="comment">// IonEngine Window Device setup</span></div><div class="line">    IonEngine::SetWindowName(<span class="stringliteral">&quot;Ion Engine Demo&quot;</span>);</div><div class="line">    IonEngine::SetWidthHeight(800, 600);</div><div class="line">    IonEngine::SetBackgroundColor(0.4f, 0.4f, 0.8f, 1.0f);</div><div class="line">}</div></div><!-- fragment --><p>Alternativley the user could create a GameManager singleton that sets the first scene on initialization; then the GameManager can be initialized in the IonEngine::InitializeEngine() function. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga0e10ace63690d29b73054e45ea7c38ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IonEngine::EngineEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Public engine function that is called when shitting down. </p>
+<p>Within the EngineEnd() function the user can preform cleanup on objects that normally aren't cleaned up elsewhere (like singletons). </p>
+
+</div>
+</div>
 <a class="anchor" id="gab279cee8a7ac9b166bd5e7c379043cbe"></a>
 <div class="memitem">
 <div class="memproto">
