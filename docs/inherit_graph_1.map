@@ -1,8 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d0/dd1/class_game_object.html" title="Base class that all game entities derive from. " alt="" coords="5,107,100,133"/>
-<area shape="rect" id="node2" href="$d7/db6/class_alarmable.html" title="A virtual derived class of GameObject that allows the GameObject to set alarms. " alt="" coords="148,5,228,32"/>
-<area shape="rect" id="node3" href="$d8/deb/class_collidable.html" title="A virtual derived class of GameObject that allows the GameObject to test for collison. " alt="" coords="149,56,227,83"/>
-<area shape="rect" id="node4" href="$d2/de4/class_drawable.html" title="A virtual derived class of GameObject that allows the GameObject to be drawn. " alt="" coords="151,107,225,133"/>
-<area shape="rect" id="node5" href="$d6/d0f/class_inputable.html" title="A virtual derived class of GameObject that allows the GameObject to register and test input keys..." alt="" coords="151,157,225,184"/>
-<area shape="rect" id="node6" href="$d7/d69/class_updatable.html" title="A virtual derived class of GameObject that allows the GameObject to be updated. " alt="" coords="148,208,228,235"/>
-</map>
