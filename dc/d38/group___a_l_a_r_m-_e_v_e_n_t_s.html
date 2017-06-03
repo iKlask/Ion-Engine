@@ -97,13 +97,6 @@ Collaboration diagram for Alarm events:</div>
 <center><table><tr><td><div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d38/group___a_l_a_r_m-_e_v_e_n_t_s.svg" width="251" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </td></tr></table></center>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/class_alarmable.html">Alarmable</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual derived class of <a class="el" href="../../d0/dd1/class_game_object.html" title="Base class that all game entities derive from. ">GameObject</a> that allows the <a class="el" href="../../d0/dd1/class_game_object.html" title="Base class that all game entities derive from. ">GameObject</a> to set alarms.  <a href="../../d7/db6/class_alarmable.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Callbacks and set up for classes derived from <a class="el" href="../../d7/db6/class_alarmable.html" title="A virtual derived class of GameObject that allows the GameObject to set alarms. ">Alarmable</a>. </p>
 <p><a class="el" href="../../d7/db6/class_alarmable.html" title="A virtual derived class of GameObject that allows the GameObject to set alarms. ">Alarmable</a> GameObjects allow the user to set up alarms to execute code after a set time. This is done through the virtual alarm functions that the user can override. Each <a class="el" href="../../d7/db6/class_alarmable.html" title="A virtual derived class of GameObject that allows the GameObject to set alarms. ">Alarmable</a> <a class="el" href="../../d0/dd1/class_game_object.html" title="Base class that all game entities derive from. ">GameObject</a> has up to three alarms that can be overriden:</p><ul>
@@ -119,6 +112,13 @@ Classes</h2></td></tr>
 <p>When the alarm is activated at the <a class="el" href="../../d7/db6/class_alarmable.html#ae11aa44ab7d7831064855ba43b711523" title="Function which is called if set by the user. ">Alarmable::Alarm0()</a> function, it calls the <a class="el" href="../../d0/dd1/class_game_object.html#ab13c929c99c3074d4a0467ce02cd7998" title="Public Function to register a call for the GameObject&#39;s SceneEntry() function. ">GameObject::SubmitExit()</a> function.</p>
 <p>The <a class="el" href="../../d7/db6/class_alarmable.html" title="A virtual derived class of GameObject that allows the GameObject to set alarms. ">Alarmable</a> <a class="el" href="../../d0/dd1/class_game_object.html" title="Base class that all game entities derive from. ">GameObject</a> then confirms that <a class="el" href="../../d7/db6/class_alarmable.html#ae11aa44ab7d7831064855ba43b711523" title="Function which is called if set by the user. ">Alarmable::Alarm0()</a> is deregistered from the AlarmableManager by calling <a class="el" href="../../d7/db6/class_alarmable.html#a77c8f3186bdc24287dc9bf7b470e0323" title="Function to deregister specified alarm from being triggered. ">Alarmable::StopAlarm()</a> within the <a class="el" href="../../d0/dd1/class_game_object.html#afb3c061ffd79d7b18ad64a543b91d5c9" title="Function which is called upon a registered scene exit. ">GameObject::SceneExit()</a> function (this is just incase <a class="el" href="../../d0/dd1/class_game_object.html#ab13c929c99c3074d4a0467ce02cd7998" title="Public Function to register a call for the GameObject&#39;s SceneEntry() function. ">GameObject::SubmitExit()</a> is called elsewhere while the alarm is still running).</p>
 <p>NOTE: The engine WILL assert if the user tries to stop an alarm that isn't set or tries to set and alarm that is already set. Make sure to avoid setting the same alarm more than once and/or stopping an alarm when it isn't set. </p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/class_alarmable.html">Alarmable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual derived class of <a class="el" href="../../d0/dd1/class_game_object.html" title="Base class that all game entities derive from. ">GameObject</a> that allows the <a class="el" href="../../d0/dd1/class_game_object.html" title="Base class that all game entities derive from. ">GameObject</a> to set alarms.  <a href="../../d7/db6/class_alarmable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

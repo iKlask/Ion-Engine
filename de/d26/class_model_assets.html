@@ -103,7 +103,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
  <a href="../../de/d26/class_model_assets.html#details">More...</a></p>
 
 <p><code>#include &lt;ModelAssets.h&gt;</code></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>System manager for saving and accessing external model resources. </p>
+<p>The <a class="el" href="../../de/d26/class_model_assets.html" title="System manager for saving and accessing external model resources. ">ModelAssets</a> is a singleton that allows the user to resuse saved external model resources throughout their project.</p>
+<p>Models are saved via the <a class="el" href="../../de/d26/class_model_assets.html#af665fa9924d70c709ddce161e1ad8336" title="Function saves a model created from the desired path. ">Load()</a> functions in the <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga6e96f3a103d10ec7cfbf056c9b47f1d5" title="Public engine function for loading assets/resources. ">IonEngine::LoadResources()</a> function. They can then be accessed by using the <a class="el" href="../../de/d26/class_model_assets.html#ac10943d2c5a2131f24d5d6311359db13" title="Function returns model pointer based off of the passed in key. ">Get()</a> functions and the associated key that the user defined upon loading. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ab2760eda8261ac8ee53fc7e8fd7a5018"><td class="memItemLeft" align="right" valign="top">typedef std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d26/class_model_assets.html#ab2760eda8261ac8ee53fc7e8fd7a5018">ModelKey</a></td></tr>
@@ -118,11 +122,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac10943d2c5a2131f24d5d6311359db13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function returns model pointer based off of the passed in key.  <a href="#ac10943d2c5a2131f24d5d6311359db13">More...</a><br /></td></tr>
 <tr class="separator:ac10943d2c5a2131f24d5d6311359db13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>System manager for saving and accessing external model resources. </p>
-<p>The <a class="el" href="../../de/d26/class_model_assets.html" title="System manager for saving and accessing external model resources. ">ModelAssets</a> is a singleton that allows the user to resuse saved external model resources throughout their project.</p>
-<p>Models are saved via the <a class="el" href="../../de/d26/class_model_assets.html#af665fa9924d70c709ddce161e1ad8336" title="Function saves a model created from the desired path. ">Load()</a> functions in the <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga6e96f3a103d10ec7cfbf056c9b47f1d5" title="Public engine function for loading assets/resources. ">IonEngine::LoadResources()</a> function. They can then be accessed by using the <a class="el" href="../../de/d26/class_model_assets.html#ac10943d2c5a2131f24d5d6311359db13" title="Function returns model pointer based off of the passed in key. ">Get()</a> functions and the associated key that the user defined upon loading. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ab2760eda8261ac8ee53fc7e8fd7a5018"></a>
 <div class="memitem">
 <div class="memproto">

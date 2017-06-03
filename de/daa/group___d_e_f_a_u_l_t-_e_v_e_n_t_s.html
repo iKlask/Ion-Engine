@@ -97,13 +97,6 @@ Collaboration diagram for Default GameObject Events:</div>
 <center><table><tr><td><div class="center"><iframe scrolling="no" frameborder="0" src="../../de/daa/group___d_e_f_a_u_l_t-_e_v_e_n_t_s.svg" width="292" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </td></tr></table></center>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd1/class_game_object.html">GameObject</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class that all game entities derive from.  <a href="../../d0/dd1/class_game_object.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Events that all GameObjects are registered to receive. </p>
 <p>GameObjects will most likely be inherited through the implementation of it's child classes. More information in these modules:</p><ul>
@@ -124,6 +117,13 @@ Classes</h2></td></tr>
 <p>In the <a class="el" href="../../d0/dd1/class_game_object.html#ab1e9ca16a81fcb31a1e198669d0a74c0" title="Function which is called upon a registered scene entry. ">GameObject::SceneEntry()</a>, the bullet has an alarm set plus it is registered to be <a class="el" href="../../d7/d69/class_updatable.html" title="A virtual derived class of GameObject that allows the GameObject to be updated. ">Updatable</a>, <a class="el" href="../../d2/de4/class_drawable.html" title="A virtual derived class of GameObject that allows the GameObject to be drawn. ">Drawable</a>, and <a class="el" href="../../d8/deb/class_collidable.html" title="A virtual derived class of GameObject that allows the GameObject to test for collison. ">Collidable</a>.</p>
 <p>When the alarm goes off, the <a class="el" href="../../d0/dd1/class_game_object.html#ab13c929c99c3074d4a0467ce02cd7998" title="Public Function to register a call for the GameObject&#39;s SceneEntry() function. ">GameObject::SubmitExit()</a> function is called which calls <a class="el" href="../../d0/dd1/class_game_object.html#afb3c061ffd79d7b18ad64a543b91d5c9" title="Function which is called upon a registered scene exit. ">GameObject::SceneExit()</a> on the next update frame.</p>
 <p>In <a class="el" href="../../d0/dd1/class_game_object.html#afb3c061ffd79d7b18ad64a543b91d5c9" title="Function which is called upon a registered scene exit. ">GameObject::SceneExit()</a> the bullet deregisters itself from being updated, drawn, and collidable while also making sure the alarm is stopped. It then calls BulletFactory::RecycleBullet() so the bullet instance can be reused again later. </p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd1/class_game_object.html">GameObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class that all game entities derive from.  <a href="../../d0/dd1/class_game_object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

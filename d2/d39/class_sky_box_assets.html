@@ -103,7 +103,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
  <a href="../../d2/d39/class_sky_box_assets.html#details">More...</a></p>
 
 <p><code>#include &lt;SkyBoxAssets.h&gt;</code></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>System manager for for creating and accessing <a class="el" href="../../de/dda/class_sky_box.html" title="The Skybox Object used with the SkyBoxAssets manager allows users to define a 3D textured cubemap to ...">SkyBox</a> objects from external resources. </p>
+<p>The <a class="el" href="../../d2/d39/class_sky_box_assets.html" title="System manager for for creating and accessing SkyBox objects from external resources. ">SkyBoxAssets</a> is a singleton that allows the user to create and resuse <a class="el" href="../../de/dda/class_sky_box.html" title="The Skybox Object used with the SkyBoxAssets manager allows users to define a 3D textured cubemap to ...">SkyBox</a> objects throughout their code.</p>
+<p>SkyBoxes are created via the <a class="el" href="../../d2/d39/class_sky_box_assets.html#a7ca0e628beb0658cccffbef5f4bae3b0" title="Function saves a SkyBox created from the desired texture. ">Load()</a> function in the <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga6e96f3a103d10ec7cfbf056c9b47f1d5" title="Public engine function for loading assets/resources. ">IonEngine::LoadResources()</a> function. They can then be accessed by using the <a class="el" href="../../d2/d39/class_sky_box_assets.html#ae6a302bcd70ce8e609738d6ecbfa7b3d" title="Function returns SkyBox pointer based off of the passed in key. ">Get()</a> function with the associated key that the user defined upon loading. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a5ba4429701f9830fe12cc1925619a113"><td class="memItemLeft" align="right" valign="top">typedef std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d39/class_sky_box_assets.html#a5ba4429701f9830fe12cc1925619a113">SkyBoxKey</a></td></tr>
@@ -118,11 +122,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae6a302bcd70ce8e609738d6ecbfa7b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function returns <a class="el" href="../../de/dda/class_sky_box.html" title="The Skybox Object used with the SkyBoxAssets manager allows users to define a 3D textured cubemap to ...">SkyBox</a> pointer based off of the passed in key.  <a href="#ae6a302bcd70ce8e609738d6ecbfa7b3d">More...</a><br /></td></tr>
 <tr class="separator:ae6a302bcd70ce8e609738d6ecbfa7b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>System manager for for creating and accessing <a class="el" href="../../de/dda/class_sky_box.html" title="The Skybox Object used with the SkyBoxAssets manager allows users to define a 3D textured cubemap to ...">SkyBox</a> objects from external resources. </p>
-<p>The <a class="el" href="../../d2/d39/class_sky_box_assets.html" title="System manager for for creating and accessing SkyBox objects from external resources. ">SkyBoxAssets</a> is a singleton that allows the user to create and resuse <a class="el" href="../../de/dda/class_sky_box.html" title="The Skybox Object used with the SkyBoxAssets manager allows users to define a 3D textured cubemap to ...">SkyBox</a> objects throughout their code.</p>
-<p>SkyBoxes are created via the <a class="el" href="../../d2/d39/class_sky_box_assets.html#a7ca0e628beb0658cccffbef5f4bae3b0" title="Function saves a SkyBox created from the desired texture. ">Load()</a> function in the <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga6e96f3a103d10ec7cfbf056c9b47f1d5" title="Public engine function for loading assets/resources. ">IonEngine::LoadResources()</a> function. They can then be accessed by using the <a class="el" href="../../d2/d39/class_sky_box_assets.html#ae6a302bcd70ce8e609738d6ecbfa7b3d" title="Function returns SkyBox pointer based off of the passed in key. ">Get()</a> function with the associated key that the user defined upon loading. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a5ba4429701f9830fe12cc1925619a113"></a>
 <div class="memitem">
 <div class="memproto">

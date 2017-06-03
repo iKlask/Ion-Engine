@@ -103,7 +103,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
  <a href="../../d4/dd7/class_terrain_assets.html#details">More...</a></p>
 
 <p><code>#include &lt;TerrainAssets.h&gt;</code></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>System manager for for creating and accessing <a class="el" href="../../d1/dee/class_terrain.html" title="Terrain class for 3D terrain. ">Terrain</a> objects from external resources. </p>
+<p>The <a class="el" href="../../d4/dd7/class_terrain_assets.html" title="System manager for for creating and accessing Terrain objects from external resources. ">TerrainAssets</a> is a singleton that allows the user to create and resuse <a class="el" href="../../d1/dee/class_terrain.html" title="Terrain class for 3D terrain. ">Terrain</a> objects throughout their code.</p>
+<p>Terrains are created via the <a class="el" href="../../d4/dd7/class_terrain_assets.html#aac5829cee471762d094e093163f0db1c" title="Function creates and saves a Terrain object. ">Load()</a> function in the <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga6e96f3a103d10ec7cfbf056c9b47f1d5" title="Public engine function for loading assets/resources. ">IonEngine::LoadResources()</a> function. They can then be accessed by using the <a class="el" href="../../d4/dd7/class_terrain_assets.html#afd37e7274798ef6230c9e93a480fc29c" title="Function returns Terrain pointer based off of the passed in key. ">Get()</a> function with the associated key that the user defined upon loading. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a645be3fe5357a55da158ef8f13fb1a11"><td class="memItemLeft" align="right" valign="top">typedef std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd7/class_terrain_assets.html#a645be3fe5357a55da158ef8f13fb1a11">TerrainKey</a></td></tr>
@@ -118,11 +122,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:afd37e7274798ef6230c9e93a480fc29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function returns <a class="el" href="../../d1/dee/class_terrain.html" title="Terrain class for 3D terrain. ">Terrain</a> pointer based off of the passed in key.  <a href="#afd37e7274798ef6230c9e93a480fc29c">More...</a><br /></td></tr>
 <tr class="separator:afd37e7274798ef6230c9e93a480fc29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>System manager for for creating and accessing <a class="el" href="../../d1/dee/class_terrain.html" title="Terrain class for 3D terrain. ">Terrain</a> objects from external resources. </p>
-<p>The <a class="el" href="../../d4/dd7/class_terrain_assets.html" title="System manager for for creating and accessing Terrain objects from external resources. ">TerrainAssets</a> is a singleton that allows the user to create and resuse <a class="el" href="../../d1/dee/class_terrain.html" title="Terrain class for 3D terrain. ">Terrain</a> objects throughout their code.</p>
-<p>Terrains are created via the <a class="el" href="../../d4/dd7/class_terrain_assets.html#aac5829cee471762d094e093163f0db1c" title="Function creates and saves a Terrain object. ">Load()</a> function in the <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga6e96f3a103d10ec7cfbf056c9b47f1d5" title="Public engine function for loading assets/resources. ">IonEngine::LoadResources()</a> function. They can then be accessed by using the <a class="el" href="../../d4/dd7/class_terrain_assets.html#afd37e7274798ef6230c9e93a480fc29c" title="Function returns Terrain pointer based off of the passed in key. ">Get()</a> function with the associated key that the user defined upon loading. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a645be3fe5357a55da158ef8f13fb1a11"></a>
 <div class="memitem">
 <div class="memproto">

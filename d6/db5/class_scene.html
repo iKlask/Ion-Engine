@@ -105,7 +105,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p><code>#include &lt;Scene.h&gt;</code></p>
 
 <p>Inherited by NullScene.</p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The space in which gameobjects exist. </p>
+<p>The scene object is where the user puts together GameObjects and other classes to form levels. The scene class takes care of updating all GameObjects that are registered within their specified managers.</p>
+<p>When deriving a new scene, the user must implement the two pure virtual functions:</p><ul>
+<li><a class="el" href="../../d6/db5/class_scene.html#acb3e6fc9fa8ce199ff10a00d86834386" title="Function to be called upon initialization of the scene. ">Initialize()</a>: Code to be called upon initialization of the scene.</li>
+<li><a class="el" href="../../d6/db5/class_scene.html#a00751100a1ad902c98e58b8a0e6db99b" title="Function to be called upon the end of the scene. ">SceneEnd()</a>: Code to be called upon the end of the scene.</li>
+</ul>
+<p>The scene class also allows access to setting/getting the current camera and registering collision pairs. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acb3e6fc9fa8ce199ff10a00d86834386"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db5/class_scene.html#acb3e6fc9fa8ce199ff10a00d86834386">Initialize</a> ()=0</td></tr>
@@ -151,15 +159,7 @@ template&lt;typename C &gt; </td></tr>
 <tr class="memdesc:a993faddb2d7ddabc6b7b19725cd6e68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers <a class="el" href="../../d8/deb/class_collidable.html" title="A virtual derived class of GameObject that allows the GameObject to test for collison. ">Collidable</a> class type to test for collision with <a class="el" href="../../d1/dee/class_terrain.html" title="Terrain class for 3D terrain. ">Terrain</a>. <br /></td></tr>
 <tr class="separator:a993faddb2d7ddabc6b7b19725cd6e68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The space in which gameobjects exist. </p>
-<p>The scene object is where the user puts together GameObjects and other classes to form levels. The scene class takes care of updating all GameObjects that are registered within their specified managers.</p>
-<p>When deriving a new scene, the user must implement the two pure virtual functions:</p><ul>
-<li><a class="el" href="../../d6/db5/class_scene.html#acb3e6fc9fa8ce199ff10a00d86834386" title="Function to be called upon initialization of the scene. ">Initialize()</a>: Code to be called upon initialization of the scene.</li>
-<li><a class="el" href="../../d6/db5/class_scene.html#a00751100a1ad902c98e58b8a0e6db99b" title="Function to be called upon the end of the scene. ">SceneEnd()</a>: Code to be called upon the end of the scene.</li>
-</ul>
-<p>The scene class also allows access to setting/getting the current camera and registering collision pairs. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a76ec5afd2ee67245a334924d4c05c08d"></a>
 <div class="memitem">
 <div class="memproto">

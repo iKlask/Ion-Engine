@@ -103,7 +103,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
  <a href="../../db/db2/class_texture_assets.html#details">More...</a></p>
 
 <p><code>#include &lt;TextureAssets.h&gt;</code></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>System manager for saving and accessing external texture resources. </p>
+<p>The <a class="el" href="../../db/db2/class_texture_assets.html" title="System manager for saving and accessing external texture resources. ">TextureAssets</a> is a singleton that allows the user to resuse saved external texture resources throughout their project.</p>
+<p>Textures are saved via the <a class="el" href="../../db/db2/class_texture_assets.html#a6a63215968148b6e66e1a6e6a89e055e" title="Function saves a texture created from the desired path. ">Load()</a> functions in the <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga6e96f3a103d10ec7cfbf056c9b47f1d5" title="Public engine function for loading assets/resources. ">IonEngine::LoadResources()</a> function. They can then be accessed by using the <a class="el" href="../../db/db2/class_texture_assets.html#a34647b9f42b0956569a27e4f4ff98a97" title="Function returns texture pointer based off of the passed in key. ">Get()</a> functions and the associated key that the user defined upon loading. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a1f375735533dafa628127878bb9ce855"><td class="memItemLeft" align="right" valign="top">typedef std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db2/class_texture_assets.html#a1f375735533dafa628127878bb9ce855">TextureKey</a></td></tr>
@@ -124,11 +128,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab1a1d937c08458a8bcaa2735814b4cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function returns texture pointer that is associated with a loaded Model.  <a href="#ab1a1d937c08458a8bcaa2735814b4cd9">More...</a><br /></td></tr>
 <tr class="separator:ab1a1d937c08458a8bcaa2735814b4cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>System manager for saving and accessing external texture resources. </p>
-<p>The <a class="el" href="../../db/db2/class_texture_assets.html" title="System manager for saving and accessing external texture resources. ">TextureAssets</a> is a singleton that allows the user to resuse saved external texture resources throughout their project.</p>
-<p>Textures are saved via the <a class="el" href="../../db/db2/class_texture_assets.html#a6a63215968148b6e66e1a6e6a89e055e" title="Function saves a texture created from the desired path. ">Load()</a> functions in the <a class="el" href="../../d7/d2d/group___r_e_s_o_u_r_c_e_s.html#ga6e96f3a103d10ec7cfbf056c9b47f1d5" title="Public engine function for loading assets/resources. ">IonEngine::LoadResources()</a> function. They can then be accessed by using the <a class="el" href="../../db/db2/class_texture_assets.html#a34647b9f42b0956569a27e4f4ff98a97" title="Function returns texture pointer based off of the passed in key. ">Get()</a> functions and the associated key that the user defined upon loading. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a1f375735533dafa628127878bb9ce855"></a>
 <div class="memitem">
 <div class="memproto">
