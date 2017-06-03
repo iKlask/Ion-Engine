@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{996e4f24-8766-4cde-8f64-8ba149619b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math">
+      <UniqueIdentifier>{330d435b-0bcf-4c07-b78f-f5d1363a7312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\DXTex">
+      <UniqueIdentifier>{9fd71c75-d1ab-4c96-8b73-567ba9ef9bba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\IonCore">
+      <UniqueIdentifier>{6679924e-77d7-477a-ae0d-0802f650a227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\IonEngine">
+      <UniqueIdentifier>{8e80a5f2-e52e-45b6-aef5-2dbfbba3262f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\IonEngine\includes">
+      <UniqueIdentifier>{224f460a-492b-494d-acde-4f1ea7535987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\IonCore\includes">
+      <UniqueIdentifier>{acfbcb85-2bba-4ca4-99f8-9f8f9388547f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\DXTex\includes">
+      <UniqueIdentifier>{e0681c42-6f67-4b0a-8c7b-975df6ae350c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\includes">
+      <UniqueIdentifier>{a0a54c6f-42a7-453f-a5cf-dadec7852feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File">
+      <UniqueIdentifier>{bdb04da1-74e9-44b4-a3b7-c2bed2f0dda6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\includes">
+      <UniqueIdentifier>{302a273e-359e-4cf3-b8b8-cc982b5b501c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code">
+      <UniqueIdentifier>{fb072b30-9077-4028-a96c-80e4e45dac5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Objects">
+      <UniqueIdentifier>{ac38e75b-1091-4c83-93dc-f832456c2df3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Objects\Bullet">
+      <UniqueIdentifier>{43d465c1-d4e9-4413-ae93-4f7c90826a42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Objects\Tank">
+      <UniqueIdentifier>{3450c339-86f8-4bf8-9566-c00e72c6f71e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Objects\Tank\Player">
+      <UniqueIdentifier>{ca5eacec-38f3-4e02-9fde-c4f69265189a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Objects\Tank\Enemy">
+      <UniqueIdentifier>{615aa366-706b-4308-904a-d644ff4d16a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Objects\Tank\Dummy">
+      <UniqueIdentifier>{ec1bce78-e72e-4929-bd35-1e42d950b6bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Objects\Camera">
+      <UniqueIdentifier>{58f2b892-f0bf-40b3-b3c1-57ab0c497187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Scenes">
+      <UniqueIdentifier>{f7bfb122-6c67-4466-a1db-2fcebc2381f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Scenes\Lose">
+      <UniqueIdentifier>{b1ebf29a-72c0-43ad-9b52-53113e514fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Scenes\Win">
+      <UniqueIdentifier>{1ecca0bf-a6b0-418c-a27f-128a3fe11e9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Scenes\Levels">
+      <UniqueIdentifier>{5e5aa4ce-2a0b-4bd1-9a9a-d4569141fc4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Code\Scenes\Main Menu">
+      <UniqueIdentifier>{4ba65596-71f0-44a6-9bc9-1ccdacedc38b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Initialize Engine">
+      <UniqueIdentifier>{5e8bb88a-c8c6-4587-8a74-adbf378de572}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameManager.h">
+      <Filter>Game Code</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Game Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\DXTex\include\DirectXTex.h">
+      <Filter>_Libs\DXTex\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Align16.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Constants.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Enum.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathApp.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathEngine.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Matrix.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Quat.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\QuatApp.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Util.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Vect.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\VectApp.h">
+      <Filter>_Libs\Math\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File\include\File.h">
+      <Filter>_Libs\File\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Game Code\Objects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletFactory.h">
+      <Filter>Game Code\Objects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyTank.h">
+      <Filter>Game Code\Objects\Tank\Dummy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyFactory.h">
+      <Filter>Game Code\Objects\Tank\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTank.h">
+      <Filter>Game Code\Objects\Tank\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="FirstPersonCam.h">
+      <Filter>Game Code\Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="FollowCam.h">
+      <Filter>Game Code\Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank.h">
+      <Filter>Game Code\Objects\Tank\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuScene.h">
+      <Filter>Game Code\Scenes\Main Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="LoseScene.h">
+      <Filter>Game Code\Scenes\Lose</Filter>
+    </ClInclude>
+    <ClInclude Include="LoseScreenObject.h">
+      <Filter>Game Code\Scenes\Lose</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuScreen.h">
+      <Filter>Game Code\Scenes\Main Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="WinScene.h">
+      <Filter>Game Code\Scenes\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="WinScreenObject.h">
+      <Filter>Game Code\Scenes\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="RotateCam.h">
+      <Filter>Game Code\Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Hud.h">
+      <Filter>Game Code\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTestScene.h">
+      <Filter>Game Code\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereTest.h">
+      <Filter>Game Code\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelOne.h">
+      <Filter>Game Code\Scenes\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelThree.h">
+      <Filter>Game Code\Scenes\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelTwo.h">
+      <Filter>Game Code\Scenes\Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\AzulFileHdr.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\Camera.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\Color.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\d3dUtil.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\DebugOut.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\Engine.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\GameTimer.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\GpuVertTypes.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\GraphicsObject_Base.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\GraphicsObject_Color.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\GraphicsObject_Color_Light.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\GraphicsObject_Sprite.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\GraphicsObject_Texture.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\GraphicsObject_Texture_Light.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\GraphicsObject_WireframeColor.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\GraphicsObject_WireframeColorAuto.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\Image.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\IonEngineCore.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\Keyboard.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\LightData.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\MeshSeparator.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\Model.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\ModelTools.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\Mouse.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\Rect.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\ShaderBase.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\ShaderColor.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\ShaderColorLight.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\ShaderColorVary.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\ShaderSprite.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\ShaderTexture.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\ShaderTextureLight.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\ShaderWireframeColor.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\Texture.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonCore\include\WindowRenderer.h">
+      <Filter>_Libs\IonCore\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\Alarmable.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\AlarmID.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\Collidable.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionVolume.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionVolumeAABB.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionVolumeBoxBase.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionVolumeBSphere.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionVolumeOBB.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CommandBase.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\Drawable.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\FreezeTime.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\GameObject.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\ImageAssets.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\Inputable.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\IonCamera.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\IonEngine.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\IonMathTools.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\IonSprite.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\ModelAssets.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\RenderType.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\Scene.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\SceneManager.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\SceneManagerBroker.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\ShaderAssets.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\SkyBox.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\SkyBoxAssets.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\Terrain.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\TerrainAssets.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\TerrainObjectManager.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\TextureAssets.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\TimeManager.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\Updatable.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\UpdatableManager.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\AlarmableManager.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CameraManager.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollidableManager.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\DrawableManager.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\KeyboardEventManager.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\SkyBoxManager.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionDeregistrationCommand.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionRegistrationCommand.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionCommandBase.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionTestPairCommand.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionTestSelfCommand.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollisionTestTerrainCommand.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollidableGroup.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\CollidableGroupBase.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\Visualizer.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\TerrainArea.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\RegistrationState.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\InputEvent.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\SceneRegistrationBroker.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IonEngine\include\TerrainCellStruct.h">
+      <Filter>_Libs\IonEngine\includes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Game Code</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializeEngine.cpp">
+      <Filter>Initialize Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadResources.cpp">
+      <Filter>Initialize Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Initialize Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Game Code\Objects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletFactory.cpp">
+      <Filter>Game Code\Objects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyTank.cpp">
+      <Filter>Game Code\Objects\Tank\Dummy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyFactory.cpp">
+      <Filter>Game Code\Objects\Tank\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyTank.cpp">
+      <Filter>Game Code\Objects\Tank\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstPersonCam.cpp">
+      <Filter>Game Code\Objects\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="FollowCam.cpp">
+      <Filter>Game Code\Objects\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank.cpp">
+      <Filter>Game Code\Objects\Tank\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuScene.cpp">
+      <Filter>Game Code\Scenes\Main Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="LoseScene.cpp">
+      <Filter>Game Code\Scenes\Lose</Filter>
+    </ClCompile>
+    <ClCompile Include="LoseScreenObject.cpp">
+      <Filter>Game Code\Scenes\Lose</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuScreen.cpp">
+      <Filter>Game Code\Scenes\Main Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="WinScene.cpp">
+      <Filter>Game Code\Scenes\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="WinScreenObject.cpp">
+      <Filter>Game Code\Scenes\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateCam.cpp">
+      <Filter>Game Code\Objects\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Hud.cpp">
+      <Filter>Game Code\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTestScene.cpp">
+      <Filter>Game Code\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereTest.cpp">
+      <Filter>Game Code\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelOne.cpp">
+      <Filter>Game Code\Scenes\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelTwo.cpp">
+      <Filter>Game Code\Scenes\Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelThree.cpp">
+      <Filter>Game Code\Scenes\Levels</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\DXTex\lib\DirectXTex.lib">
+      <Filter>_Libs\DXTex</Filter>
+    </Library>
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib">
+      <Filter>_Libs\Math</Filter>
+    </Library>
+    <Library Include="..\dist\File\lib\File_Debug.lib">
+      <Filter>_Libs\File</Filter>
+    </Library>
+    <Library Include="..\dist\IonCore\lib\IonCore_Debug.lib">
+      <Filter>_Libs\IonCore</Filter>
+    </Library>
+    <Library Include="..\dist\IonEngine\lib\IonEngine_Debug.lib">
+      <Filter>_Libs\IonEngine</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
