@@ -1,3 +1,5 @@
 <map id="Resources" name="Resources">
-<area shape="rect" id="node1" href="$db/d9e/group___i_o_n-_a_p_i.html" title="Classes and functions avalible to Ion Engine Users. " alt="" coords="5,5,113,32"/>
+<area shape="rect" id="node1" href="$d8/d92/group___t_e_r_r_a_i_n.html" title="Creating and using Terrain objects from heightmaps. " alt="" coords="386,5,447,32"/>
+<area shape="rect" id="node2" href="$db/d9e/group___i_o_n-_a_p_i.html" title="Classes and functions avalible to Ion Engine Users. " alt="" coords="5,31,113,57"/>
+<area shape="rect" id="node4" href="$d1/ded/group___s_k_y-_b_o_x.html" title="Creating and using SkyBox objects from cubemapped textures. " alt="" coords="383,56,451,83"/>
 </map>

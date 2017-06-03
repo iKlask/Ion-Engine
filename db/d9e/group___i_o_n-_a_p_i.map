@@ -1,6 +1,8 @@
 <map id="Ion Engine API" name="Ion Engine API">
-<area shape="rect" id="node1" href="$de/da1/group___c_a_m_e_r_a.html" title="Creating and using the IonCamera class. " alt="" coords="165,5,253,32"/>
-<area shape="rect" id="node2" href="$d7/d2d/group___r_e_s_o_u_r_c_e_s.html" title="Loading external resources into the game. " alt="" coords="167,56,251,83"/>
-<area shape="rect" id="node4" href="$dc/deb/group___g_a_m_e_o_b_j_e_c_t.html" title="All game entities will be derived from GameObject. " alt="" coords="161,107,256,133"/>
-<area shape="rect" id="node5" href="$df/d02/group___s_c_e_n_e.html" title="A Scene is the space in which GameObjects exist. " alt="" coords="179,157,238,184"/>
+<area shape="rect" id="node1" href="$d8/d92/group___t_e_r_r_a_i_n.html" title="Creating and using Terrain objects from heightmaps. " alt="" coords="178,5,239,32"/>
+<area shape="rect" id="node2" href="$de/da1/group___c_a_m_e_r_a.html" title="Creating and using the IonCamera class. " alt="" coords="165,56,253,83"/>
+<area shape="rect" id="node3" href="$d7/d2d/group___r_e_s_o_u_r_c_e_s.html" title="Loading external resources into the game. " alt="" coords="167,107,251,133"/>
+<area shape="rect" id="node5" href="$dc/deb/group___g_a_m_e_o_b_j_e_c_t.html" title="All game entities will be derived from GameObject. " alt="" coords="161,157,256,184"/>
+<area shape="rect" id="node6" href="$df/d02/group___s_c_e_n_e.html" title="A Scene is the space in which GameObjects exist. " alt="" coords="179,208,238,235"/>
+<area shape="rect" id="node7" href="$d1/ded/group___s_k_y-_b_o_x.html" title="Creating and using SkyBox objects from cubemapped textures. " alt="" coords="175,259,243,285"/>
 </map>

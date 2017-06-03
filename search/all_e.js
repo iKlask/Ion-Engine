@@ -1,8 +1,8 @@
 var searchData=
 [
   ['updatable',['Updatable',['../d7/d69/class_updatable.html',1,'']]],
-  ['update',['Update',['../de/da1/group___c_a_m_e_r_a.html#ga6d5b547d2a89d55c3d4ac6a0295f200c',1,'IonCamera::Update()'],['../da/dfc/group___u_p_d_a_t_e-_e_v_e_n_t_s.html#ga4bed06c6110e7a2fcb71c66cc30fa55e',1,'Updatable::Update()']]],
+  ['update',['Update',['../d1/d96/class_ion_camera.html#a6d5b547d2a89d55c3d4ac6a0295f200c',1,'IonCamera::Update()'],['../d7/d69/class_updatable.html#a4bed06c6110e7a2fcb71c66cc30fa55e',1,'Updatable::Update()']]],
   ['update_20events_2e',['Update events.',['../da/dfc/group___u_p_d_a_t_e-_e_v_e_n_t_s.html',1,'']]],
-  ['updatecamera',['updateCamera',['../de/da1/group___c_a_m_e_r_a.html#ga2f3a66b91217dc6d889ee8f717c426ba',1,'IonCamera']]],
-  ['updatecollisiondata',['UpdateCollisionData',['../d2/d0e/group___c_o_l_l_i_s_i_o_n-_e_v_e_n_t_s.html#gad28b334896831067381461249cecc2fa',1,'Collidable']]]
+  ['updatecamera',['updateCamera',['../d1/d96/class_ion_camera.html#a2f3a66b91217dc6d889ee8f717c426ba',1,'IonCamera']]],
+  ['updatecollisiondata',['UpdateCollisionData',['../d8/deb/class_collidable.html#ad28b334896831067381461249cecc2fa',1,'Collidable']]]
 ];
